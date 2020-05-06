@@ -1,0 +1,8 @@
+#!/bin/sh
+if ! [ -f "$1/METADATA.pb" ]; then
+	echo "$(basename "$1")"
+	exit 0
+fi
+
+awk -F ': ' '/^name: / {print $2}' "$1/METADATA.pb" \
+	| tr -d '"' | tr ' ' '+'

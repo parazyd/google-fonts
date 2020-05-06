@@ -1,0 +1,4 @@
+#!/bin/sh
+for i in $(find "$1" -mindepth 1 -maxdepth 1 -type d); do
+	printf "media-fonts/%s\n" "$(basename "$i")"
+done
