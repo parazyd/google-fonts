@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repositories version="1.0">
+<repo priority="10" status="unofficial">
+        <name>google-fonts</name>
+        <description>Overlay with ebuilds for all Google Fonts</description>
+        <homepage>gopher://parazyd.org</homepage>
+        <owner>
+                <email>parazyd@dyne.org</email>
+                <name>parazyd</name>
+        </owner>
+        <source type="git">https://git.parazyd.org/google-fonts.git</source>
+        <feed>https://parazyd.org/git/google-fonts/atom.xml</feed>
+</repo>
+</repositories>
