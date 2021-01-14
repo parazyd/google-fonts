@@ -10,7 +10,11 @@ OFL_LICENSE = OFL-1.1
 OFL_SHLICENSE = ofl
 OFL_FONTS = $(shell ./tools/getfonts $(REPO)/ofl)
 
-all: $(APACHE_FONTS) $(OFL_FONTS)
+UFL_LICENSE = UbuntuFontLicense-1.0
+UFL_SHLICENSE = ufl
+UFL_FONTS = $(shell ./tools/getfonts $(REPO)/ufl)
+
+all: $(APACHE_FONTS) $(OFL_FONTS) $(UFL_FONTS)
 
 update:
 	cd $(REPO) && git pull origin master
@@ -36,6 +40,17 @@ $(OFL_FONTS):
 		-e "s,@PRETTYNAMEURL@,$(shell ./tools/prettyname $(REPO)/ofl/$(shell basename $@))," \
 		-e "s,@LICENSE@,$(OFL_LICENSE)," \
 		-e "s,@SHLICENSE@,$(OFL_SHLICENSE)," \
+		-e "s,@FONT@,$(shell basename $@)," \
+		< ebuild.skel > $@/$(shell basename $@)-9999.ebuild
+
+$(UFL_FONTS):
+	mkdir -p $@
+	cp metadata.skel $@/metadata.xml
+	sed \
+		-e "s,@PRETTYNAME@,$(shell ./tools/prettyname $(REPO)/ufl/$(shell basename $@) | tr '+' ' ')," \
+		-e "s,@PRETTYNAMEURL@,$(shell ./tools/prettyname $(REPO)/ufl/$(shell basename $@))," \
+		-e "s,@LICENSE@,$(UFL_LICENSE)," \
+		-e "s,@SHLICENSE@,$(UFL_SHLICENSE)," \
 		-e "s,@FONT@,$(shell basename $@)," \
 		< ebuild.skel > $@/$(shell basename $@)-9999.ebuild
 
