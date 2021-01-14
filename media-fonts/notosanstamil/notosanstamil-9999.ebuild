@@ -5,8 +5,8 @@ EAPI=7
 
 inherit font git-r3
 
-DESCRIPTION="Google Fonts notosanstamil font"
-HOMEPAGE="https://fonts.google.com/specimen/notosanstamil"
+DESCRIPTION="Google Fonts Noto Sans Tamil font"
+HOMEPAGE="https://fonts.google.com/specimen/Noto+Sans+Tamil"
 EGIT_REPO_URI="https://github.com/google/fonts"
 
 LICENSE="OFL-1.1"

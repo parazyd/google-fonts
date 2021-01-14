@@ -9,7 +9,7 @@ DESCRIPTION="Google Fonts Roboto font"
 HOMEPAGE="https://fonts.google.com/specimen/Roboto"
 EGIT_REPO_URI="https://github.com/google/fonts"
 
-LICENSE="OFL-1.1"
+LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS=""
 IUSE=""
@@ -22,5 +22,5 @@ RESTRICT="binchecks strip"
 FONT_SUFFIX="ttf"
 
 src_install() {
-	FONT_S="${WORKDIR}/${P}/ofl/roboto" font_src_install
+	FONT_S="${WORKDIR}/${P}/apache/roboto" font_src_install
 }
