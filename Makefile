@@ -22,9 +22,9 @@ update:
 	git commit -m 'Update google-fonts submodule to latest revision.'
 
 $(APACHE_FONTS):
-	mkdir -p $@
-	cp metadata.skel $@/metadata.xml
-	sed \
+	@mkdir -p $@
+	@cp metadata.skel $@/metadata.xml
+	@sed \
 		-e "s,@PRETTYNAME@,$(shell ./tools/prettyname $(REPO)/apache/$(shell basename $@) | tr '+' ' ')," \
 		-e "s,@PRETTYNAMEURL@,$(shell ./tools/prettyname $(REPO)/apache/$(shell basename $@))," \
 		-e "s,@LICENSE@,$(APACHE_LICENSE)," \
@@ -33,9 +33,9 @@ $(APACHE_FONTS):
 		< ebuild.skel > $@/$(shell basename $@)-9999.ebuild
 
 $(OFL_FONTS):
-	mkdir -p $@
-	cp metadata.skel $@/metadata.xml
-	sed \
+	@mkdir -p $@
+	@cp metadata.skel $@/metadata.xml
+	@sed \
 		-e "s,@PRETTYNAME@,$(shell ./tools/prettyname $(REPO)/ofl/$(shell basename $@) | tr '+' ' ')," \
 		-e "s,@PRETTYNAMEURL@,$(shell ./tools/prettyname $(REPO)/ofl/$(shell basename $@))," \
 		-e "s,@LICENSE@,$(OFL_LICENSE)," \
@@ -44,9 +44,9 @@ $(OFL_FONTS):
 		< ebuild.skel > $@/$(shell basename $@)-9999.ebuild
 
 $(UFL_FONTS):
-	mkdir -p $@
-	cp metadata.skel $@/metadata.xml
-	sed \
+	@mkdir -p $@
+	@cp metadata.skel $@/metadata.xml
+	@sed \
 		-e "s,@PRETTYNAME@,$(shell ./tools/prettyname $(REPO)/ufl/$(shell basename $@) | tr '+' ' ')," \
 		-e "s,@PRETTYNAMEURL@,$(shell ./tools/prettyname $(REPO)/ufl/$(shell basename $@))," \
 		-e "s,@LICENSE@,$(UFL_LICENSE)," \
