@@ -17,7 +17,7 @@ UFL_FONTS = $(shell ./tools/getfonts $(REPO)/ufl)
 all: $(APACHE_FONTS) $(OFL_FONTS) $(UFL_FONTS)
 
 update:
-	cd $(REPO) && git pull origin master
+	cd $(REPO) && git pull origin main
 	git add fonts
 	git commit -m 'Update google-fonts submodule to latest revision.'
 
