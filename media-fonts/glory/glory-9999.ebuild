@@ -5,8 +5,8 @@ EAPI=7
 
 inherit font git-r3
 
-DESCRIPTION="Google Fonts NotoSerifTamilSlanted font"
-HOMEPAGE="https://fonts.google.com/specimen/NotoSerifTamilSlanted"
+DESCRIPTION="Google Fonts Glory font"
+HOMEPAGE="https://fonts.google.com/specimen/Glory"
 EGIT_REPO_URI="https://github.com/google/fonts"
 
 LICENSE="OFL-1.1"
@@ -22,5 +22,5 @@ RESTRICT="binchecks strip"
 FONT_SUFFIX="ttf"
 
 src_install() {
-	FONT_S="${WORKDIR}/${P}/ofl/notoseriftamilslanted" font_src_install
+	FONT_S="${WORKDIR}/${P}/ofl/glory" font_src_install
 }
