@@ -5,8 +5,8 @@ EAPI=7
 
 inherit font git-r3
 
-DESCRIPTION="Google Fonts Sawarabi Mincho font"
-HOMEPAGE="https://fonts.google.com/specimen/Sawarabi+Mincho"
+DESCRIPTION="Google Fonts Rock 3D font"
+HOMEPAGE="https://fonts.google.com/specimen/Rock+3D"
 EGIT_REPO_URI="https://github.com/google/fonts"
 
 LICENSE="OFL-1.1"
@@ -22,5 +22,5 @@ RESTRICT="binchecks strip"
 FONT_SUFFIX="ttf"
 
 src_install() {
-	FONT_S="${WORKDIR}/${P}/ofl/sawarabimincho" font_src_install
+	FONT_S="${WORKDIR}/${P}/ofl/rock3d" font_src_install
 }

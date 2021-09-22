@@ -5,8 +5,8 @@ EAPI=7
 
 inherit font git-r3
 
-DESCRIPTION="Google Fonts Noto Sans MeeteiMayek font"
-HOMEPAGE="https://fonts.google.com/specimen/Noto+Sans+MeeteiMayek"
+DESCRIPTION="Google Fonts Noto Sans Meetei Mayek font"
+HOMEPAGE="https://fonts.google.com/specimen/Noto+Sans+Meetei+Mayek"
 EGIT_REPO_URI="https://github.com/google/fonts"
 
 LICENSE="OFL-1.1"
