@@ -5,8 +5,8 @@ EAPI=7
 
 inherit font git-r3
 
-DESCRIPTION="Google Fonts Nokora font"
-HOMEPAGE="https://fonts.google.com/specimen/Nokora"
+DESCRIPTION="Google Fonts Zen Maru Gothic font"
+HOMEPAGE="https://fonts.google.com/specimen/Zen+Maru+Gothic"
 EGIT_REPO_URI="https://github.com/google/fonts"
 
 LICENSE="OFL-1.1"
@@ -22,5 +22,5 @@ RESTRICT="binchecks strip"
 FONT_SUFFIX="ttf"
 
 src_install() {
-	FONT_S="${WORKDIR}/${P}/ofl/nokora" font_src_install
+	FONT_S="${WORKDIR}/${P}/ofl/zenmarugothic" font_src_install
 }
