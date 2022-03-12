@@ -5,8 +5,8 @@ EAPI=7
 
 inherit font git-r3
 
-DESCRIPTION="Google Fonts Darumadrop One font"
-HOMEPAGE="https://fonts.google.com/specimen/Darumadrop+One"
+DESCRIPTION="Google Fonts Kolker Brush font"
+HOMEPAGE="https://fonts.google.com/specimen/Kolker+Brush"
 EGIT_REPO_URI="https://github.com/google/fonts"
 
 LICENSE="OFL-1.1"
@@ -22,5 +22,5 @@ RESTRICT="binchecks strip"
 FONT_SUFFIX="ttf"
 
 src_install() {
-	FONT_S="${WORKDIR}/${P}/ofl/darumadropone" font_src_install
+	FONT_S="${WORKDIR}/${P}/ofl/kolkerbrush" font_src_install
 }

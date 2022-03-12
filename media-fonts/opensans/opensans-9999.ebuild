@@ -9,7 +9,7 @@ DESCRIPTION="Google Fonts Open Sans font"
 HOMEPAGE="https://fonts.google.com/specimen/Open+Sans"
 EGIT_REPO_URI="https://github.com/google/fonts"
 
-LICENSE="Apache-2.0"
+LICENSE="OFL-1.1"
 SLOT="0"
 KEYWORDS=""
 IUSE=""
@@ -22,5 +22,5 @@ RESTRICT="binchecks strip"
 FONT_SUFFIX="ttf"
 
 src_install() {
-	FONT_S="${WORKDIR}/${P}/apache/opensans" font_src_install
+	FONT_S="${WORKDIR}/${P}/ofl/opensans" font_src_install
 }

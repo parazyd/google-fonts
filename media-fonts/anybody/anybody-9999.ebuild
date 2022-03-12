@@ -5,8 +5,8 @@ EAPI=7
 
 inherit font git-r3
 
-DESCRIPTION="Google Fonts Darumadrop One font"
-HOMEPAGE="https://fonts.google.com/specimen/Darumadrop+One"
+DESCRIPTION="Google Fonts Anybody font"
+HOMEPAGE="https://fonts.google.com/specimen/Anybody"
 EGIT_REPO_URI="https://github.com/google/fonts"
 
 LICENSE="OFL-1.1"
@@ -22,5 +22,5 @@ RESTRICT="binchecks strip"
 FONT_SUFFIX="ttf"
 
 src_install() {
-	FONT_S="${WORKDIR}/${P}/ofl/darumadropone" font_src_install
+	FONT_S="${WORKDIR}/${P}/ofl/anybody" font_src_install
 }
