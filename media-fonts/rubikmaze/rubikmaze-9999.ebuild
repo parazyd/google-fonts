@@ -5,8 +5,8 @@ EAPI=7
 
 inherit font git-r3
 
-DESCRIPTION="Google Fonts Gentium Plus Book font"
-HOMEPAGE="https://fonts.google.com/specimen/Gentium+Plus+Book"
+DESCRIPTION="Google Fonts Rubik Maze font"
+HOMEPAGE="https://fonts.google.com/specimen/Rubik+Maze"
 EGIT_REPO_URI="https://github.com/google/fonts"
 
 LICENSE="OFL-1.1"
@@ -22,5 +22,5 @@ RESTRICT="binchecks strip"
 FONT_SUFFIX="ttf"
 
 src_install() {
-	FONT_S="${WORKDIR}/${P}/ofl/gentiumplusbook" font_src_install
+	FONT_S="${WORKDIR}/${P}/ofl/rubikmaze" font_src_install
 }
